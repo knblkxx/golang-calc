@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/gorilla/mux"
 	"github.com/knblkxx/golang-calc/calculator"
-	"github.com/knblkxx/golang-calc/handlers"
+	"github.com/knblkxx/golang-calc/calculator/handlers"
 	"log"
 	"net/http"
 	"os"
