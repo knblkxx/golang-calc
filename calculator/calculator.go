@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/joho/godotenv"
-	"github.com/maxpawgdbs/yandex-go/structs"
+	"github.com/knblkxx/golang-calc/structs"
 	"io/ioutil"
 	"net/http"
 	"os"
