@@ -17,3 +17,7 @@ curl --location http://localhost:8080/api/v1/calculate --header 'Content-Type: a
 ```bash
 curl --location http://localhost:8080/api/v1/calculate --header 'Content-Type: application/json' --data '{"expression": "2+2*2/0"}'
 ```
+### Структура программы
+```
+ExpressionHandler <- Клиент -> Оркестр <-> Агент
+```
