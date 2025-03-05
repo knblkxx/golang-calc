@@ -13,6 +13,7 @@ import (
 func main() {
 	calculator.Initial()
 	err := os.MkdirAll("database", os.ModePerm)
+	handlers.Initial()
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(0)
@@ -22,5 +23,6 @@ func main() {
 	r.HandleFunc("/api/v1/calculate", handlers.CalculatorHandler)
 	r.HandleFunc("/api/v1/expressions/{id}", handlers.ExpressionAnswer)
 	r.HandleFunc("/api/v1/expressions", handlers.ExpressionsList)
+	r.HandleFunc("/internal/task", handlers.OrkestratorHandler)
 	http.ListenAndServe(":8080", r)
 }
